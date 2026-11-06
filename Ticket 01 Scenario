@@ -14,11 +14,41 @@ The directory and file was made by me but was modified and edited to create a sc
 ## Finding the file
 Using ls -l, I searched and displayed the directories that were within the terminal. I then used cd Troubleshootinglab to change directories into the 'Troubleshootinglab' directory and then used ls to display all the files in the directory and found the 'report.txt' file.
 
+rpsecurity100@Thebigmac:~$ ls -l
+total 44
+drwxr-xr-x 2 rpsecurity100 rpsecurity100 4096 Nov  5 11:32 Desktop
+drwxr-xr-x 2 rpsecurity100 rpsecurity100 4096 Nov  5 11:32 Documents
+drwxr-xr-x 2 rpsecurity100 rpsecurity100 4096 Nov  5 11:32 Downloads
+drwxr-xr-x 2 rpsecurity100 rpsecurity100 4096 Nov  5 11:32 Music
+drwxr-xr-x 2 rpsecurity100 rpsecurity100 4096 Nov  5 11:32 Pictures
+drwxr-xr-x 2 rpsecurity100 rpsecurity100 4096 Nov  5 11:32 Public
+drwxr-xr-x 2 rpsecurity100 rpsecurity100 4096 Nov  5 11:32 Templates
+drwxrwxr-x 2 rpsecurity100 rpsecurity100 4096 Nov  5 16:17 Troubleshootinglab
+drwxr-xr-x 2 rpsecurity100 rpsecurity100 4096 Nov  5 11:32 Videos
+drwxrwxr-x 2 rpsecurity100 rpsecurity100 4096 Nov  5 15:52 lol
+drwx------ 6 rpsecurity100 rpsecurity100 4096 Nov  5 15:41 snap
+rpsecurity100@Thebigmac:~$ cd Troubleshootinglab
+rpsecurity100@Thebigmac:~/Troubleshootinglab$ ls
+report.txt
+
+
 ## Access denied
 After trying to display or read the text within report.txt using cat, the terminal states that the permission for reading this file was denied.
+
+rpsecurity100@Thebigmac:~/Troubleshootinglab$ cat report.txt
+cat: report.txt: Permission denied
 
 ## Checking file permissions
 Using ls -l, I checked the permission of report.txt and found that the file gave no permission to access, read, or edit the file for neither the owner, group, or other users.
 
+rpsecurity100@Thebigmac:~/Troubleshootinglab$ ls -l
+total 4
+---------- 1 rpsecurity100 rpsecurity100 150 Nov  5 16:17 report.txt
+
 ## Changing permissions
 To change and fix the permissions, I used chmod 644 report.txt to give the owner permission to read and edit the file while group and other users will only have access to read the files. Using ls -l again, I used this command line to verify that the owner, group, and other users have the correct permissions for the file.
+
+rpsecurity100@Thebigmac:~/Troubleshootinglab$ chmod 644 report.txt
+rpsecurity100@Thebigmac:~/Troubleshootinglab$ ls -l
+total 4
+-rw-r--r-- 1 rpsecurity100 rpsecurity100 150 Nov  5 16:17 report.txt
