@@ -1,0 +1,25 @@
+# Ticket 01 Scenario
+## Scenario
+A customer complains that a text file "report.txt" they created won't let them read or edit it.
+
+## Context
+The directory and file was made by me but was modified and edited to create a scenario or possibility where a customer happens to run an issue where their file can't be accessed.
+
+## Objective
+- Investigate file permissions
+- Identify permissions of owner, group, and others
+- Determine why the file can't be accessed
+- Correct the permission issue
+
+## Finding the file
+Using ls -l, I searched and displayed the directories that were within the terminal. I then used cd Troubleshootinglab to change directories into the 'Troubleshootinglab' directory and then used ls to display all the files in the directory and found the 'report.txt' file.
+
+
+## Access denied
+After trying to display or read the text within report.txt using cat, the terminal states that the permission for reading this file was denied.
+
+## Checking file permissions
+Using ls -l, I checked the permission of report.txt and found that the file gave no permission to access, read, or edit the file for neither the owner, group, or other users.
+
+## Changing permissions
+To change and fix the permissions, I used chmod 644 report.txt to give the owner permission to read and edit the file while group and other users will only have access to read the files. Using ls -l again, I used this command line to verify that the owner, group, and other users have the correct permissions for the file.
