@@ -14,7 +14,6 @@ The directory and file was made by me but was modified and edited to create a sc
 ## Finding the file
 Using ls -l, I searched and displayed the directories that were within the terminal. I then used cd Troubleshootinglab to change directories into the 'Troubleshootinglab' directory and then used ls to display all the files in the directory and found the 'report.txt' file.
 
-
 ## Access denied
 After trying to display or read the text within report.txt using cat, the terminal states that the permission for reading this file was denied.
 
