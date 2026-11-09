@@ -52,3 +52,10 @@ rpsecurity100@Thebigmac:~/Troubleshootinglab$ chmod 644 report.txt
 rpsecurity100@Thebigmac:~/Troubleshootinglab$ ls -l
 total 4
 -rw-r--r-- 1 rpsecurity100 rpsecurity100 150 Nov  5 16:17 report.txt
+
+## Displaying the Content
+Once I checked that the owner has the permission to read and write the files while groups and other users can only read it, I then displayed the content file using cat report.txt to check and see if I can read the file.
+Here is what the file displayed:
+
+This is a permission trouble shooting practice.
+If you can read this file, you have probably changed permissions that allow you to read or edit this.
