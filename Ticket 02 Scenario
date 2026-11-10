@@ -1,1 +1,6 @@
+# Ticket 02 Scenario
+## Lab Setup
+For this lab, I created a 'test user' for my linux environment and moved it into the /Users directory. I used sudo mkdir /Users in order to create a Users directory for the users to be placed or moved into. I then used sudo useradd testuser to add a test subject or user that I can experiment on for this ticket scenario. 
+Once the user is added, I used the command sudo usermod -d /Users/testuser -m test user to move the testuser into the user directory. After moving the user into the Users directory, I used the sudo passwd -l testuser to lock the account to create a scenario where the user that has trouble logging into his account happened to forgot his password and lead to his account being locked.
 
+## Objective
